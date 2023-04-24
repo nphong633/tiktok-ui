@@ -4,7 +4,6 @@
     --primary: #fe2c55;
     --white: #fff;
     --black: #000;
-    --text-color: #ccc;
 
     //Default Layout
     --default-layout-header-height: 60px;
@@ -37,5 +36,5 @@ button,
 
 a[href] {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--black);
 }

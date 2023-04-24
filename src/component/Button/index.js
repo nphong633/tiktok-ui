@@ -7,6 +7,7 @@ const cx = classNames.bind(styles);
 function Button({
     className,
     leftIcon,
+    rightIcon,
     to,
     href,
     children,
@@ -57,6 +58,7 @@ function Button({
         <Comp className={classes} {...props}>
             {leftIcon && <span className={cx('icon')}>{leftIcon}</span>}
             <span className={cx('title')}>{children}</span>
+            {rightIcon && <span className={cx('icon')}>{rightIcon}</span>}
         </Comp>
     );
 }
