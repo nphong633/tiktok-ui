@@ -101,7 +101,10 @@
     padding: 4px 8px;
     font-size: 2rem;
     background-color: transparent;
-    cursor: pointer;
+}
+
+.upload-btn {
+    margin-right: 8px;
 }
 
 .action-btn {
@@ -109,6 +112,7 @@
     color: #161823;
     background-color: transparent;
     padding: 4px 12px;
+    margin-top: 8px;
 }
 
 .user-avatar {

@@ -15,6 +15,7 @@ function Button({
     outline = false,
     text = false,
     rounded = false,
+    normal = false,
     disabled = false,
     small = false,
     large = false,
@@ -31,6 +32,7 @@ function Button({
         disabled,
         small,
         large,
+        normal,
     });
 
     const props = {
