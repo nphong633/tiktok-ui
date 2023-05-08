@@ -7,6 +7,10 @@
     }
 }
 
+.menu-body {
+    overflow-y: auto;
+}
+
 //Menu Items
 .menu-item {
     width: 100%;
@@ -29,6 +33,7 @@
     position: relative;
     height: 50px;
     margin-top: -8px;
+    flex-shrink: 0;
 }
 
 .header-btn {
