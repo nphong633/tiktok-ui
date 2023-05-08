@@ -19,11 +19,11 @@ import {
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
-import routesConfig from '~/config/routes';
+import config from '~/config';
 import images from '~/assets/images';
 import styles from './Header.module.scss';
 import Button from '~/component/Button';
-import Menu from '~/component/Layout/components/Popper/Menu';
+import Menu from '~/layouts/components/Popper/Menu';
 import { InboxIcon, MessageIcon } from '~/component/Icons';
 import Image from '~/component/Image';
 import Search from '../Search';
@@ -102,7 +102,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo-link')}>
+                <Link to={config.routes.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="Tiktok" />
                 </Link>
 
