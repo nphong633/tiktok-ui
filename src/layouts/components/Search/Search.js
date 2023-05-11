@@ -18,7 +18,7 @@ function Search() {
     const [searchResult, setSearchResult] = useState([]);
     const [showResult, setShowResult] = useState(true);
     const [loading, setLoading] = useState(false);
-    const debouced = useDebouced(searchValue, 500);
+    const deboucedValue = useDebouced(searchValue, 500);
 
     const inputRef = useRef();
 
@@ -40,7 +40,7 @@ function Search() {
     };
 
     useEffect(() => {
-        if (!debouced.trim()) {
+        if (!deboucedValue.trim()) {
             setSearchResult([]);
             return;
         }
@@ -48,7 +48,7 @@ function Search() {
         const fetchAPI = async () => {
             setLoading(true);
 
-            const result = await searchServices.search(debouced);
+            const result = await searchServices.search(deboucedValue);
 
             setSearchResult(result);
 
@@ -58,7 +58,7 @@ function Search() {
         fetchAPI();
 
         setLoading(true);
-    }, [debouced]);
+    }, [deboucedValue]);
 
     return (
         // Using a wrapper <div> tag around the reference element solves this by creating a new parentNode context.
